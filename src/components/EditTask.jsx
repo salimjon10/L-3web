@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { editTask } from "../../actions/taskActions";
+import { editTask } from "../actions/taskActions";
 
 export default function EditTask({ setAlert, index }) {
   const dispatch = useDispatch();

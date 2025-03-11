@@ -1,8 +1,8 @@
-import shareCopy from "../images/copy.svg";
-import shareVK from "../images/vk.svg";
-import shareTG from "../images/telegram.svg";
-import shareWhatsapp from "../images/whats.svg";
-import shareFacebook from "../images/whats.svg";
+import shareCopy from "../assets/images/copy.svg";
+import shareVK from "../assets/images/vk.svg";
+import shareTG from "../assets/images/telegram.svg";
+import shareWhatsapp from "../assets/images/whats.svg";
+import shareFacebook from "../assets/images/whats.svg";
 
 export default function ShareTask({ setAlert }) {
   function closeAlert() {

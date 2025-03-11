@@ -2,9 +2,9 @@ import React, { useState, useRef } from "react";
 import TaskButtons from "./TaskButtons";
 import DeletAlert from "./DeletAlert";
 import { useDrag, useDrop } from "react-dnd";
-import { ItemTypes } from "../../scripts/itemTypes";
+import { ItemTypes } from "../scripts/itemTypes";
 import { connect } from "react-redux";
-import * as actions from "../../actions/taskActions";
+import * as actions from "../actions/taskActions";
 
 function Task({ index, moveCard, setAlert, title, bodyTask }) {
   const [buttonsVisible, setButtonsVisible] = useState(false);

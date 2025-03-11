@@ -1,5 +1,5 @@
-import editIcon from "../images/edit.svg";
-import shareIcon from "../images/share.svg";
+import editIcon from "../assets/images/edit.svg";
+import shareIcon from "../assets/images/share.svg";
 import EditTask from "./EditTask";
 import ShareTask from "./ShareTask";
 

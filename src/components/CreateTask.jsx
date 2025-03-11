@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { addTask } from "../../actions/taskActions";
+import { addTask } from "../actions/taskActions";
 
 export default function CreateTask() {
   const dispatch = useDispatch();

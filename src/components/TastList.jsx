@@ -2,7 +2,7 @@ import React from "react";
 import Task from "./Task";
 import ZeroTasks from "./ZeroTasks";
 import { useSelector, useDispatch } from "react-redux";
-import { moveTask } from "../../actions/taskActions";
+import { moveTask } from "../actions/taskActions";
 
 function TaskList({ setAlert }) {
   const tasks = useSelector((state) => state.tasks);

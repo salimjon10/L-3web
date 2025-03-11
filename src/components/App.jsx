@@ -1,6 +1,6 @@
 import CreateTask from "./CreateTask.jsx";
 import TaskList from "./TastList.jsx";
-import store from "../../scripts/store.js";
+import store from "../scripts/store.js";
 import React, { useState } from "react";
 import { Provider } from "react-redux";
 import { DndProvider } from "react-dnd";

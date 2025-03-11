@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTask } from "../../actions/taskActions";
+import { deleteTask } from "../actions/taskActions";
 
 export default function DeletAlert({ setAlert, index }) {
   const dispatch = useDispatch();
