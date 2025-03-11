@@ -13,7 +13,7 @@ export default function TaskButtons({ setAlert, index }) {
   }
 
   return (
-    <div>
+    <div className="button_container">
       <button
         id="editButton"
         onClick={showEditMenu}
@@ -21,7 +21,7 @@ export default function TaskButtons({ setAlert, index }) {
         <img src={editIcon} alt="" />
       </button>
 
-      <button>i</button>
+      <button className="action_button">i</button>
 
       <button
         id="shareButton"

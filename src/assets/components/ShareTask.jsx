@@ -10,27 +10,29 @@ export default function ShareTask({ setAlert }) {
   }
 
   return (
-    <div onClick={closeAlert}>
-      <div>
-        <button>
-          <img src={shareCopy} alt="" />
-        </button>
+    <div className="modal hidden" onClick={closeAlert}>
+      <div className="edit_modal_content">
+        <div className="share_buttons">
+          <button>
+            <img src={shareCopy} alt="" />
+          </button>
 
-        <button>
-          <img src={shareVK} alt="" />
-        </button>
+          <button>
+            <img src={shareVK} alt="" />
+          </button>
 
-        <button>
-          <img src={shareTG} alt="" />
-        </button>
+          <button>
+            <img src={shareTG} alt="" />
+          </button>
 
-        <button>
-          <img src={shareWhatsapp} alt="" />
-        </button>
+          <button>
+            <img src={shareWhatsapp} alt="" />
+          </button>
 
-        <button>
-          <img src={shareFacebook} alt="" />
-        </button>
+          <button>
+            <img src={shareFacebook} alt="" />
+          </button>
+        </div>
       </div>
     </div>
   );

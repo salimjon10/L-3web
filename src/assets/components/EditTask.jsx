@@ -28,34 +28,32 @@ export default function EditTask({ setAlert, index }) {
   }
 
   return (
-    <div>
-      <div>
-        <input
-          ref={inputTitleRef}
-          id="edit_input_title_task"
-          type="text"
-          placeholder="Title..."
-          defaultValue={task?.title || ""}
-        />
-        <textarea
-          ref={inputBodyRef}
-          id="edit_input_body_task"
-          type="text"
-          placeholder="About..."
-          defaultValue={task?.bodyTask || ""}
-        ></textarea>
+    <div className="modal hidden">
+      <div className="edit_modal_content">
+        <div className="text_container">
+          <input
+            ref={inputTitleRef}
+            id="edit_input_title_task"
+            className="input mini_input mb-12"
+            type="text"
+            placeholder="Title..."
+            defaultValue={task?.title || ""}
+          />
+          <textarea
+            ref={inputBodyRef}
+            id="edit_input_body_task"
+            className="textarea max_input"
+            type="text"
+            placeholder="About..."
+            defaultValue={task?.bodyTask || ""}
+          ></textarea>
+        </div>
 
-        <div>
-          <button
-            id="edit_button_cancel"
-            onClick={closeAlert}
-          >
+        <div className="edit_modal_buttons">
+          <button id="edit_button_cancel" className="cancel_button" onClick={closeAlert}>
             Cancel
           </button>
-          <button
-            id="edit_button_save"
-            onClick={handleEditTask}
-          >
+          <button id="edit_button_save" className="save_button" onClick={handleEditTask}>
             Save
           </button>
         </div>

@@ -193,6 +193,21 @@ button:hover {
     margin: 2px; 
     gap: 10px;
     transition: all 0.3s ease; 
+
+    button{
+        width: 36px;
+        height: 36px;
+        background-color: $task_background; 
+        border: 1px solid $primary_color; 
+        color: white; 
+        cursor: pointer;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 5px 10px; 
+        border-radius: 4px; 
+        font-size: 16px;
+    }
 }
 
 .mb-12 {
@@ -200,28 +215,20 @@ button:hover {
 }
 
 .hidden {
-    display: none; 
+    min-width: 600px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
 }
 
 .task.expanded {
     margin-top: 25px;
     margin-bottom: 5px; 
     transition: margin-top 0.3s ease;
-}
-
-.action_button {
-    width: 36px;
-    height: 36px;
-    background-color: $task_background; 
-    border: 1px solid $primary_color; 
-    color: white; 
-    cursor: pointer;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 5px 10px; 
-    border-radius: 4px; 
-    font-size: 16px;
 }
 
 //добавление редактирования задачи 
@@ -250,20 +257,20 @@ button:hover {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
-}
 
-.share_button {
-    background-color: $task-background;
-    border-radius: 50%;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px; 
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
+    button{
+        background-color: $task-background;
+        border-radius: 50%;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+    }
 }
 
 .share_button img {

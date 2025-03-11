@@ -65,13 +65,13 @@ function Task({ index, moveCard, setAlert, title, bodyTask }) {
   return (
     <div ref={ref}>
       <div className="task">
-        <div
+        <div className="text-container"
           onClick={() => setButtonsVisible(!buttonsVisible)}
         >
-          <div>{title}</div>
-          <p>{bodyTask}</p>
+          <div className="title">{title}</div>
+          <p className="about">{bodyTask}</p>
         </div>
-        <button onClick={openDelMenu}>
+        <button className="delete_button" onClick={openDelMenu}>
           X
         </button>
       </div>

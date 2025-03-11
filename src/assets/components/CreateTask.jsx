@@ -22,22 +22,24 @@ export default function CreateTask() {
   }
 
   return (
-    <div>
-      <div>
+    <div className="header">
+      <div className="text_container">
         <input
           ref={inputTitleRef}
           id="title_tasks_input"
+          className="input title"
           type="text"
           placeholder="Title..."
         />
         <input
           ref={inputBodyRef}
           id="body_tasks_input"
+          className="input about"
           type="text"
           placeholder="About..."
         />
       </div>
-      <button onClick={handleAddTask}>
+      <button className="add_button" onClick={handleAddTask}>
         +
       </button>
     </div>

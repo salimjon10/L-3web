@@ -10,7 +10,7 @@ function App() {
   const [alert, setAlert] = useState();
 
   return (
-    <>
+    <div className="container">
       <Provider store={store}>
         {alert}
         <CreateTask />
@@ -18,7 +18,7 @@ function App() {
           <TaskList setAlert={setAlert} />
         </DndProvider>
       </Provider>
-    </>
+    </div>
   );
 }
 

@@ -25,7 +25,7 @@ function TaskList({ setAlert }) {
         bodyTask={task.bodyTask}
       />
     ));
-    return <div>{taskListResult}</div>;
+    return <div className="task_section">{taskListResult}</div>;
   }
 }
 

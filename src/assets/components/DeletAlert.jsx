@@ -15,14 +15,14 @@ export default function DeletAlert({ setAlert, index }) {
   }
 
   return (
-    <div>
-      <div>
+    <div className="modal hidden">
+      <div className="modal_content">
         Delete this task?
-        <div>
-          <button id="choice_button_yes" onClick={handleDelete}>
+        <div className="modal_buttons">
+          <button id="choice_button_yes" className="confirm_button" onClick={handleDelete}>
             Yes
           </button>
-          <button id="choice_button_no" onClick={closeAlert}>
+          <button id="choice_button_no" className="cancel_button" onClick={closeAlert}>
             No
           </button>
         </div>
